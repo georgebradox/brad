@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brodox George</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Enable dark mode class strategy
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <style>
+    .hover-underline:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <a href="#" class="text-2xl font-bold text-blue-700 dark:text-blue-400">BRODOX GEORGE</a>
+
+      <!-- Navigation -->
+      <nav class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-blue-500 hover-underline">Home</a>
+        <a href="#about" class="hover:text-blue-500 hover-underline">About</a>
+        <a href="#services" class="hover:text-blue-500 hover-underline">Services</a>
+        <a href="#contact" class="hover:text-blue-500 hover-underline">Contact</a>
+      </nav>
+
+      <!-- CTA and Theme Toggle -->
+      <div class="flex items-center space-x-4">
+        <a href="#services" class="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          Contact Me for Tech Help
+        </a>
+        <button id="toggleDark" class="text-xl bg-gray-300 dark:bg-gray-600 px-2 py-1 rounded">🌓</button>
+      </div>
+
+      <!-- Mobile -->
+      <div class="md:hidden">
+        <button id="menuToggle" class="text-blue-700 dark:text-white focus:outline-none text-2xl">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white dark:bg-gray-800 border-t dark:border-gray-600">
+      <a href="#home" class="block py-2 hover:text-blue-500">Home</a>
+      <a href="#about" class="block py-2 hover:text-blue-500">About</a>
+      <a href="#services" class="block py-2 hover:text-blue-500">Services</a>
+      <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 dark:bg-gray-900 py-20 text-center transition">
+    <h2 class="text-4xl font-bold mb-4 text-blue-700 dark:text-blue-400 animate-bounce">Welcome to My Website</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto">Empowering Your Business Through Smart Tech Solutions.</p>
+  </section>
+
+  <!-- Home -->
+  <section id="home" class="py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Home</h2>
+      <img src="public/Images/img3.jpg" alt="Description" class="mx-auto rounded shadow-lg" width="300" />
+      <p class="mt-4">Hey there, I’m Brodox George! Welcome to my corner of the internet.</p>
+      <p>I’m an aspiring tech enthusiast learning web design, cybersecurity, and more.</p>
+      <p>This is my digital journal, built as I pursue my BSc in IT at Technical University of Mombasa.</p>
+      <p>Explore and see what I’m up to!</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">About Me</h2>
+      <img src="PUBLIC/Images/img2.jpg" alt="Description" class="mx-auto rounded shadow-lg" width="300" />
+      <p class="mt-4">I'm <strong>Brodox George</strong>, a student at <strong>Technical University of Mombasa</strong>.</p>
+      <p>Pursuing a BSc in Information Technology, I’m into <strong>web development</strong>, <strong>Python programming</strong>, and <strong>cybersecurity basics</strong>.</p>
+      <p>I love building things and solving tech problems — and this site shows my progress.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-100 dark:bg-gray-800 transition">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-700 dark:text-blue-400">Services I Offer</h2>
+      <div class="grid md:grid-cols-3 gap-8 px-4">
+        <!-- Service Card -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <img src="public/Images/img5.jpg" alt="Web Dev" class="mx-auto rounded" width="300" />
+          <p>I build responsive sites using HTML, CSS, JavaScript & Tailwind CSS.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Cybersecurity Basics</h3>
+          <img src="public/Images/img6.jpg" alt="Cybersecurity" class="mx-auto rounded" width="300" />
+          <p>Helping secure your devices with basic tools & safety habits.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Software Installation</h3>
+          <img src="public/Images/img10.jpg" alt="Software" class="mx-auto rounded" width="300" />
+          <p>I install and configure essential software and tools.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Computer Maintenance</h3>
+          <img src="public/Images/img8.jpg" alt="Maintenance" class="mx-auto rounded" width="300" />
+          <p>Fixing issues and optimizing performance of your devices.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">IT Support</h3>
+          <img src="public/Images/img7.jpg" alt="Support" class="mx-auto rounded" width="300" />
+          <p>Basic IT support for troubleshooting and quick fixes.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Networking Setup</h3>
+          <img src="public/Images/img11.jpg" alt="Networking" class="mx-auto rounded" width="300" />
+          <p>Setup of LAN, routers, and Wi-Fi configurations for home or small office.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white dark:bg-gray-900 transition">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-blue-700 dark:text-blue-400">Contact Me</h2>
+      <p>Email: <a href="mailto:georgebrodox@gmail.com" class="text-blue-500 hover:underline">georgebrodox@gmail.com</a></p>
+      <p>Phone: +254700868913</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-6">
+    <p>&copy; 2025 Brodox George. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Dark mode toggle
+    document.getElementById('toggleDark').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
